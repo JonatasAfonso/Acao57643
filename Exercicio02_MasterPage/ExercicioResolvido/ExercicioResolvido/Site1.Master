@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ExercicioResolvido.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 262px;
+            height: 261px;
+            margin-right: 34px;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        h2 {
+            color: yellow;
+        }
+
+        .footer {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1>Minha Super Aplicacao Melhor que o Facebook</h1>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <a href="Default.aspx">Default.aspx</a><br />
+            <a href="WebForm2.aspx">WebForm2.aspx</a><br />
+            <br />
+            <asp:Label CssClass="footer" ID="lblHoraCorrente" runat="server" Text="Label"></asp:Label>
+            <br />
+            <br />
+            <img alt="" class="auto-style1" src="Content/tiny-toon-adventures-personagens.png" /></div>
+    </form>
+</body>
+</html>
